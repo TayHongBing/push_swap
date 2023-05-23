@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:16:18 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/21 22:56:57 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/23 16:21:26 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,20 @@ void		error_quit(t_list **list_a, t_list **list_b);
 void		ft_putstr(char *str);
 long int	ft_atoi(const char *str);
 int			abs_nbr(int nbr);
+int			is_sorted(t_list *list);
 t_list		*new_node(int value);
 int			get_size(t_list *list);
 t_list		*get_list_bottom(t_list *list);
 t_list		*get_list_second_last(t_list *list);
 t_list		*list_add_bottom(t_list **list, t_list *new);
+void		do_pa(t_list **list_a, t_list **list_b);
+void		do_pb(t_list **list_a, t_list **list_b);
+void		do_ra(t_list **list_a);
+void		do_rb(t_list **list_b);
+void		do_rr(t_list **list_a, t_list **list_b);
+void		do_rra(t_list **list_a);
+void		do_rrb(t_list **list_b);
+void		do_rrr(t_list **list_a, t_list **list_b);
+void		do_sa(t_list **list_a);
+void		do_sb(t_list **list_b);
+void		do_ss(t_list **list_a, t_list **list_b);

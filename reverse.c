@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:41:56 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/23 15:59:30 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/23 16:13:07 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	do_rra(t_list **list_a)
 	ft_putstr("rra\n");
 }
 
-void	do_rra(t_list **list_b)
+void	do_rrb(t_list **list_b)
 {
 	rev_rotate(list_b);
 	ft_putstr("rrb\n");
