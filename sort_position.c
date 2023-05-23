@@ -6,18 +6,18 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 21:43:38 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/23 22:16:42 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:36:51 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void	assign_position(t_list **list)
+static void	assign_position(t_list *list)
 {
 	t_list	*tmp;
 	int		i;
 
-	tmp = *list;
+	tmp = list;
 	i = 0;
 	while (tmp)
 	{
@@ -73,8 +73,8 @@ void	get_target_p(t_list **list_a, t_list **list_b)
 	t_list	*tmp_b;
 
 	tmp_b = *list_b;
-	assign_position(list_a);
-	assign_position(list_b);
+	assign_position(*list_a);
+	assign_position(*list_b);
 	while (tmp_b)
 	{
 		tmp_b->target_p = get_target(*list_a, tmp_b->index);

@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:32:25 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/19 17:25:08 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:25:55 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ int	check_input(char **av)
 	i = 1;
 	while (av[i])
 	{
-		if (!is_nb(av[i]))
+		if (!is_nbr(av[i]))
 			return (0);
 		count_0 += is_0(av[i]);
 		i++;

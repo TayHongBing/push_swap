@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 00:03:23 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/24 00:16:13 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:27:21 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ static void	do_reverse_both(t_list **a, t_list **b, int *moves_a, int *moves_b)
 {
 	while (*moves_a < 0 && *moves_b < 0)
 	{
-		*moves_a++;
-		*moves_b++;
+		(*moves_a)++;
+		(*moves_b)++;
 		do_rrr(a, b);
 	}
 }
@@ -26,8 +26,8 @@ static void	do_rotate_both(t_list **a, t_list **b, int *moves_a, int *moves_b)
 {
 	while (*moves_a > 0 && *moves_b > 0)
 	{
-		*moves_a--;
-		*moves_b--;
+		(*moves_a)--;
+		(*moves_b)--;
 		do_rr(a, b);
 	}
 }
@@ -39,12 +39,12 @@ static void	do_rotate_a(t_list **a, int *moves)
 		if (*moves > 0)
 		{
 			do_ra(a);
-			*moves--;
+			(*moves)--;
 		}
 		else if (*moves < 0)
 		{
 			do_rra(a);
-			*moves++;
+			(*moves)++;
 		}
 	}
 }
@@ -56,12 +56,12 @@ static void	do_rotate_b(t_list **b, int *moves)
 		if (*moves > 0)
 		{
 			do_rb(b);
-			*moves--;
+			(*moves)--;
 		}
 		else if (*moves < 0)
 		{
 			do_rrb(b);
-			*moves++;
+			(*moves)++;
 		}
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 16:49:13 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/24 00:17:18 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:37:17 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static void	shift_list(t_list **list)
 	int	list_size;
 
 	list_size = get_size(*list);
-	lowest_p = lowest_idx_pos(list);
+	lowest_p = lowest_idx_pos(*list);
 	if (lowest_p > list_size / 2)
 	{
 		while (lowest_p < list_size)

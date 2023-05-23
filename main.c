@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:24:47 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/24 00:19:42 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:30:43 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	main(int ac, char **av)
 	int		list_size;
 
 	if (ac < 2)
-		return (NULL);
+		return (0);
 	if (!check_input(av))
 		error_quit(NULL, NULL);
 	list_a = fill_values(ac, av);

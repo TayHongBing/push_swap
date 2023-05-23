@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 21:59:22 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/21 22:56:05 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:28:50 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ t_list	*get_list_second_last(t_list *list)
 	return (list);
 }
 
-t_list	*list_add_bottom(t_list **list, t_list *new)
+void	list_add_bottom(t_list **list, t_list *new)
 {
 	t_list	*end;
 

@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:16:18 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/24 00:18:17 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:31:28 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ t_list		*new_node(int value);
 int			get_size(t_list *list);
 t_list		*get_list_bottom(t_list *list);
 t_list		*get_list_second_last(t_list *list);
-t_list		*list_add_bottom(t_list **list, t_list *new);
+void		list_add_bottom(t_list **list, t_list *new);
 void		do_pa(t_list **list_a, t_list **list_b);
 void		do_pb(t_list **list_a, t_list **list_b);
 void		do_ra(t_list **list_a);
@@ -59,3 +59,8 @@ int			lowest_idx_pos(t_list *list);
 void		get_move(t_list **list_a, t_list **list_b);
 void		do_move(t_list **list_a, t_list **list_b, int moves_a, int moves_b);
 void		do_least_move(t_list **list_a, t_list **list_b);
+void		sort(t_list **list_a, t_list **list_b);
+t_list		*fill_values(int ac, char **av);
+void		assign_index(t_list *list);
+
+#endif
