@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:24:47 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/23 14:35:35 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:19:42 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,7 @@ int	main(int ac, char **av)
 	list_size = get_size(list_a);
 	assign_index(list_a);
 	push_swap(&list_a, &list_b, list_size);
+	free_list(&list_a);
+	free_list(&list_b);
+	return (0);
 }

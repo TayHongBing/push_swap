@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:16:18 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/23 22:18:05 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:18:17 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,3 +56,6 @@ void		do_ss(t_list **list_a, t_list **list_b);
 void		three_digit(t_list **list);
 void		get_target_p(t_list **list_a, t_list **list_b);
 int			lowest_idx_pos(t_list *list);
+void		get_move(t_list **list_a, t_list **list_b);
+void		do_move(t_list **list_a, t_list **list_b, int moves_a, int moves_b);
+void		do_least_move(t_list **list_a, t_list **list_b);

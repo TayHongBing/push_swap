@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 16:49:13 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/23 22:32:07 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/24 00:17:18 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	sort(t_list **list_a, t_list **list_b)
 	{
 		get_target_p(list_a, list_b);
 		get_move(list_a, list_b);
-		do_move(list_a, list_b);
+		do_least_move(list_a, list_b);
 	}
 	if (!is_sorted(*list_a))
 		shift_list(list_a);
