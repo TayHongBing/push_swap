@@ -6,7 +6,7 @@
 /*   By: thong-bi <thong-bi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 16:16:18 by thong-bi          #+#    #+#             */
-/*   Updated: 2023/05/23 16:21:26 by thong-bi         ###   ########.fr       */
+/*   Updated: 2023/05/23 16:35:12 by thong-bi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,3 +53,4 @@ void		do_rrr(t_list **list_a, t_list **list_b);
 void		do_sa(t_list **list_a);
 void		do_sb(t_list **list_b);
 void		do_ss(t_list **list_a, t_list **list_b);
+void		three_digit(t_list **list);
